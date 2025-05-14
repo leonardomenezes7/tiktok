@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TikTok Analytics Mockup - Viewers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-left">
+                <span>No SIM</span>
+                <i class="fas fa-wifi vpn-icon"></i>
+            </div>
+            <div class="status-center">
+                <span>8:36 PM</span>
+            </div>
+            <div class="status-right">
+                <i class="fas fa-battery-three-quarters"></i>
+            </div>
+        </div>
+
+        <!-- Page Header -->
+        <header class="page-header">
+            <a href="index.html" class="back-icon-link"><i class="fas fa-chevron-left back-icon"></i></a>
+            <h1>Video analysis</h1>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <a href="index.html" class="tab-button">Overview</a>
+            <a href="viewers.html" class="tab-button active">Viewers</a>
+            <button class="tab-button">Engagement</button> <!-- Placeholder, will link to engagement.html later -->
+        </nav>
+
+        <!-- Total Viewers Section -->
+        <section class="total-viewers-section analytics-section">
+            <div class="section-header">
+                <h3>Total viewers <i class="fas fa-info-circle info-icon"></i></h3>
+            </div>
+            <div class="total-viewers-value">62.7K</div>
+            <div class="total-viewers-comparison">
+                <i class="fas fa-arrow-up positive-change"></i> +676 <span class="comparison-period">(vs 1d ago)</span>
+            </div>
+        </section>
+
+        <!-- Viewer Types Section -->
+        <section class="viewer-types-section analytics-section">
+            <div class="section-header">
+                <h3>Viewer types <i class="fas fa-info-circle info-icon"></i></h3>
+            </div>
+            <div class="viewer-type-item">
+                <div class="viewer-type-percentages">
+                    <span>85%</span>
+                    <span>15%</span>
+                </div>
+                <div class="viewer-type-progress-bar-container">
+                    <div class="viewer-type-progress-bar-segment new-viewers-segment" style="width: 85%;"></div>
+                    <div class="viewer-type-progress-bar-segment returning-viewers-segment" style="width: 15%;"></div>
+                </div>
+                <div class="viewer-type-labels">
+                    <span>New viewers</span>
+                    <span>Returning viewers</span>
+                </div>
+            </div>
+            <div class="viewer-type-item">
+                <div class="viewer-type-percentages">
+                    <span>100%</span>
+                    <span>0%</span>
+                </div>
+                <div class="viewer-type-progress-bar-container">
+                    <div class="viewer-type-progress-bar-segment non-followers-segment" style="width: 100%;"></div>
+                    <div class="viewer-type-progress-bar-segment followers-segment" style="width: 0%;"></div>
+                </div>
+                <div class="viewer-type-labels">
+                    <span>Non-followers</span>
+                    <span>Followers</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gender Section -->
+        <section class="gender-section analytics-section">
+            <div class="section-header">
+                <h3>Gender</h3>
+            </div>
+            <div class="gender-chart-container">
+                <!-- Placeholder for Donut Chart -->
+                <img src="https://via.placeholder.com/200x100.png?text=Gender+Donut+Chart" alt="Gender Donut Chart" class="gender-chart-placeholder">
+            </div>
+            <div class="gender-legend">
+                <span class="legend-item"><span class="legend-dot male-dot"></span> Male</span>
+                <span class="gender-percentage">69%</span>
+                <span class="legend-item"><span class="legend-dot male-dot"></span> Female</span>
+                <span class="gender-percentage">31%</span>
+            </div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
