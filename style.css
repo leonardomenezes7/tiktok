@@ -312,21 +312,6 @@ a {
 }
 
 /* Font Awesome Icons - Certifique-se de que a biblioteca está linkada no HTML */
-/* Exemplo de ícones usados:
-.fa-wifi
-.fa-battery-three-quarters
-.fa-chevron-left
-.fa-play
-.fa-heart
-.fa-comment-dots
-.fa-share
-.fa-bookmark
-.fa-times
-.fa-chevron-right
-.fa-info-circle
-*/
-
-
 
 /* Key Metrics Section - Detailed (Print 2) */
 .updated-date-subheader {
@@ -373,15 +358,12 @@ a {
 .chart-container {
     width: 100%;
     margin-bottom: 10px;
-    /* Estilos para o container do gráfico, se necessário */
 }
 
 .chart-placeholder {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    /* Adicionar uma borda sutil se parecer melhor */
-    /* border: 1px solid #e0e0e0; */
 }
 
 .chart-description {
@@ -393,8 +375,6 @@ a {
     background-color: #f8f8f8;
     border-radius: 6px;
 }
-
-
 
 /* Retention Rate Section (Print 3) */
 .retention-rate-section {
@@ -434,10 +414,10 @@ a {
 .retention-video-thumbnail-container {
     position: relative;
     width: 100%;
-    max-width: 380px; /* Max width from placeholder */
-    margin: 0 auto 15px auto; /* Center it */
+    max-width: 380px; 
+    margin: 0 auto 15px auto; 
     border-radius: 8px;
-    overflow: hidden; /* Ensures play icon stays within bounds */
+    overflow: hidden; 
 }
 
 .retention-video-thumbnail {
@@ -451,7 +431,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 48px; /* Large play icon */
+    font-size: 48px; 
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
@@ -468,12 +448,11 @@ a {
     width: 100%;
     height: auto;
     border-radius: 4px;
-    /* border: 1px solid #e0e0e0; */ /* Optional border */
 }
 
 .retention-scrubber-container {
     width: 100%;
-    padding: 0 5px; /* Small padding to align with chart edges */
+    padding: 0 5px; 
     box-sizing: border-box;
 }
 
@@ -495,7 +474,7 @@ a {
 
 .scrubber-bar-progress {
     height: 100%;
-    background-color: #161823; /* TikTok main color for progress */
+    background-color: #161823; 
     border-radius: 2px;
 }
 
@@ -512,8 +491,6 @@ a {
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
-
-
 /* Traffic Sources & Search Queries Sections (Print 4) */
 .traffic-sources-section,
 .search-queries-section {
@@ -528,7 +505,7 @@ a {
 .search-queries-section .section-header {
     display: flex;
     align-items: center;
-    margin-bottom: 12px; /* Increased margin for section title */
+    margin-bottom: 12px; 
 }
 
 .traffic-sources-section .section-header h3,
@@ -549,7 +526,7 @@ a {
 .progress-bar-list {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Space between progress items */
+    gap: 12px; 
 }
 
 .progress-item {
@@ -561,7 +538,7 @@ a {
 .progress-label {
     font-size: 14px;
     color: #161823;
-    width: 35%; /* Adjust as needed, e.g., for 'Personal profile' */
+    width: 35%; 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -569,13 +546,13 @@ a {
 }
 
 .search-queries-section .progress-label {
-    width: 45%; /* More space for longer search queries */
+    width: 45%; 
 }
 
 .progress-bar-container {
     flex-grow: 1;
     height: 8px;
-    background-color: #f0f2f5; /* Light grey background for the bar track */
+    background-color: #f0f2f5; 
     border-radius: 0px;
     overflow: hidden;
     margin-right: 10px;
@@ -583,7 +560,7 @@ a {
 
 .progress-bar {
     height: 100%;
-    background-color: #007BFF; /* TikTok blue for progress, adjust if needed */
+    background-color: #007BFF; 
     border-radius: 0px;
     transition: width 0.3s ease-in-out;
 }
@@ -592,47 +569,40 @@ a {
     font-size: 14px;
     color: #161823;
     font-weight: 500;
-    min-width: 45px; /* Ensure space for percentages like 100.0% */
+    min-width: 45px; 
     text-align: right;
 }
 
-
-
-
 /* Viewers Page Specific Styles (viewers.html) */
-
-.total-viewers-section .section-header h3,
-.viewer-types-section .section-header h3,
-.gender-section .section-header h3 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #161823;
-    margin: 0;
-}
 
 .analytics-section {
     padding: 15px;
     background-color: #ffffff;
     margin: 0 15px 15px 15px;
     border-radius: 8px;
-    border: 1px solid #e0e0e0; /* Consistent border with other sections */
+    border: 1px solid #e0e0e0; 
 }
 
-.total-viewers-section .section-header,
-.viewer-types-section .section-header,
-.gender-section .section-header {
+.analytics-section .section-header {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increased bottom margin for section titles */
 }
 
-.total-viewers-section .info-icon,
-.viewer-types-section .info-icon {
+.analytics-section .section-header h3 {
+    font-size: 17px; /* Slightly larger font for section titles */
+    font-weight: 600;
+    color: #161823;
+    margin: 0;
+}
+
+.analytics-section .section-header .info-icon {
     font-size: 14px;
     color: #8a8a8a;
     margin-left: 6px;
 }
 
+/* Total Viewers Section */
 .total-viewers-value {
     font-size: 28px;
     font-weight: 700;
@@ -646,7 +616,7 @@ a {
 }
 
 .total-viewers-comparison .positive-change {
-    color: #25a969; /* Green for positive change */
+    color: #25a969; 
     margin-right: 3px;
 }
 
@@ -656,7 +626,7 @@ a {
 
 /* Viewer Types Section */
 .viewer-type-item {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Increased margin between viewer type items */
 }
 
 .viewer-type-item:last-child {
@@ -669,16 +639,16 @@ a {
     font-size: 13px;
     font-weight: 500;
     color: #161823;
-    margin-bottom: 4px;
+    margin-bottom: 6px; /* Increased margin */
 }
 
 .viewer-type-progress-bar-container {
     display: flex;
     width: 100%;
     height: 8px;
-    background-color: #e0e0e0; /* Fallback/track color */
+    background-color: #e0e0e0; 
     border-radius: 4px;
-    overflow: hidden; /* Ensures segments stay within rounded corners */
+    overflow: hidden; 
 }
 
 .viewer-type-progress-bar-segment {
@@ -686,19 +656,19 @@ a {
 }
 
 .new-viewers-segment {
-    background-color: #007BFF; /* Main blue */
+    background-color: #007BFF; 
 }
 
 .returning-viewers-segment {
-    background-color: #87CEFA; /* Lighter blue */
+    background-color: #87CEFA; 
 }
 
 .non-followers-segment {
-    background-color: #007BFF; /* Main blue */
+    background-color: #007BFF; 
 }
 
 .followers-segment {
-    background-color: #e0e0e0; /* Or a very light blue if 0% should still show a sliver */
+    background-color: #e0e0e0; 
 }
 
 .viewer-type-labels {
@@ -706,50 +676,159 @@ a {
     justify-content: space-between;
     font-size: 12px;
     color: #555555;
-    margin-top: 4px;
+    margin-top: 6px; /* Increased margin */
 }
 
 /* Gender Section */
-.gender-chart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    /* Placeholder styling for the chart image */
-}
-
-.gender-chart-placeholder {
-    max-width: 150px; /* Adjust as needed */
-    height: auto;
+.gender-section .section-header {
+    margin-bottom: 12px; /* Specific margin for gender section header */
 }
 
 .gender-legend {
     display: flex;
-    justify-content: space-between; /* Pushes percentage to the right */
+    flex-direction: column; /* Changed to column as per new image */
+    gap: 10px; /* Space between gender items */
+}
+
+.gender-item {
+    display: flex;
     align-items: center;
     font-size: 14px;
     color: #161823;
 }
 
-.legend-item {
+.gender-item .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.gender-item span:nth-child(2) { /* The text label like 'Male', 'Female' */
+    flex-grow: 1; /* Pushes percentage to the right */
+}
+
+.gender-item .gender-percentage {
+    font-weight: 500;
+    color: #161823;
+}
+
+.male-dot {
+    background-color: #007BFF; /* Blue for male */
+}
+
+.female-dot {
+    background-color: #87CEFA; /* Lighter blue for female */
+}
+
+.other-dot {
+    background-color: #cccccc; /* Grey for other */
+}
+
+/* Age Section */
+.age-section .section-header {
+    margin-bottom: 15px;
+}
+
+.age-distribution {
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* Space between age groups, from image */
+}
+
+.age-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #161823;
+}
+
+.age-range {
+    width: 60px; /* Fixed width for age range labels (e.g., 18 - 24) */
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #161823; /* Black text as per image */
+}
+
+.age-bar-container {
+    flex-grow: 1;
+    height: 8px; /* Height of the bar track */
+    background-color: #f0f2f5; /* Light grey track color */
+    border-radius: 0px; /* Sharp edges for the bar track */
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.age-bar {
+    height: 100%;
+    background-color: #007BFF; /* Blue color for the bar */
+    border-radius: 0px; /* Sharp edges for the bar itself */
+}
+
+.age-percentage {
+    font-weight: 600; /* Bolder percentage as per image */
+    color: #161823; /* Black text */
+    min-width: 35px; /* Ensure space for percentages like 44% */
+    text-align: right;
+}
+
+/* Locations Section */
+.locations-section .section-header {
+    margin-bottom: 15px;
+}
+
+.locations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between location items, from image */
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #161823;
+}
+
+.location-name {
+    flex-grow: 1; /* Pushes bar and percentage to the right */
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #161823; /* Black text as per image */
+}
+
+.location-bar-container {
+    width: 120px; /* Fixed width for the bar container, adjust as needed */
+    height: 8px; /* Height of the bar track */
+    background-color: #f0f2f5; /* Light grey track color */
+    border-radius: 0px; /* Sharp edges for the bar track */
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.location-bar {
+    height: 100%;
+    background-color: #007BFF; /* Blue color for the bar */
+    border-radius: 0px; /* Sharp edges for the bar itself */
+}
+
+.location-percentage {
+    font-weight: 600; /* Bolder percentage as per image */
+    color: #161823; /* Black text */
+    min-width: 55px; /* Ensure space for percentages like 96.9% > */
+    text-align: right;
     display: flex;
     align-items: center;
 }
 
-.legend-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 6px;
+.location-percentage .fa-chevron-right {
+    font-size: 10px;
+    color: #8a8a8a; /* Grey color for chevron */
+    margin-left: 5px;
 }
 
-.male-dot {
-    background-color: #007BFF; /* Blue for male, as in chart */
-}
-
-.gender-percentage {
-    font-weight: 500;
-}
 
 .back-icon-link {
     text-decoration: none;
